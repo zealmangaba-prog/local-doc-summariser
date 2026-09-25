@@ -1,0 +1,10 @@
+.venv
+venv
+__pycache__
+*.pyc
+.pytest_cache
+.git
+.gitignore
+README.md
+test_summariser.py
+.DS_Store
