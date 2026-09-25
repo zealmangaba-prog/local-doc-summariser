@@ -1,5 +1,16 @@
 # 🔒 Local Confidential Document Summarizer
 
+### 🐳 Run with Docker (Zero Installation)
+
+If you have Docker and Ollama installed, run the application with a single command without configuring Python:
+
+```bash
+docker run -d -p 8501:8501 \
+  --name local-doc-summarizer \
+  --add-host=host.docker.internal:host-gateway \
+  -e OLLAMA_HOST=[http://host.docker.internal:11434](http://host.docker.internal:11434) \
+  <YOUR_DOCKER_USERNAME>/local-doc-summariser:latest
+
 An air-gapped, zero-leakage document processing engine and web interface powered by Streamlit and local LLMs via Ollama. Built specifically for strictly confidential workflows where documents must never touch the cloud or write unencrypted buffers to disk.
 
 ---
